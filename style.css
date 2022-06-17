@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Ubuntu:ital,wght@0,300;1,400&display=swap');
+
 @font-face {
     font-family: pokemon;
     src: url(font/Pokemon\ Solid.ttf);
@@ -7,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'ubuntu', Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -15,6 +17,8 @@ main {
     min-height: 450px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    background: rgb(144, 44, 44);
+    background: linear-gradient(70deg, rgba(144, 44, 44, 1) 0%, rgba(253, 66, 29, 1) 50%, rgba(255, 149, 0, 1) 100%);
 }
 
 .hero-side {
@@ -59,7 +63,15 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: brown; */
+    color: #fff;
+    text-shadow: 0 0 3px black;
+}
+
+.contain-container p {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 2rem;
+    padding-right: 20rem;
 }
 
 .form-container {
@@ -67,10 +79,15 @@ main {
     padding: 1rem 0;
     background-color: antiquewhite;
     box-shadow: 2px 2px 10px #0003;
+    color: #000;
+    text-shadow: none;
 }
 
 .form-container h1 {
     margin-left: 2rem;
+    font-family: 'caveat';
+    font-size: 48px;
+    font-weight: 600;
 }
 
 form {
@@ -85,10 +102,31 @@ form input {
     width: 90%;
     margin-top: 3px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #0005;
     height: 35px;
 }
 
 form label {
     font-size: 12px;
+}
+
+.create-account button {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.668);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.create-account button:hover {
+    background-color: #f88010;
+    transition: background-color 0.2s;
+}
+
+.create-account p a {
+    color: rgb(167, 167, 167);
+    text-decoration: none;
 }
